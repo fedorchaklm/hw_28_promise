@@ -25,8 +25,8 @@ function getPost(postNumber) {
         })
         .catch((error) => {
             console.error(error);
-            container.innerHTML = `
-            <p>Something going wrong!</p>
+            container.innerHTML += `
+            <p>Something went wrong!</p>
             `
         });
 }
@@ -57,8 +57,8 @@ function getComments(postId) {
         })
         .catch((error) => {
             console.error(error); 
-            container.innerHTML = `
-            <p>Something going wrong!</p>
+            container.innerHTML += `
+            <p>Something went wrong!</p>
             `
         });
 }
